@@ -9,13 +9,19 @@
       content="Portfolio website for a frontend developer showcasing services, experience, and projects."
     />
     <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fredoka:wght@300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav container">
         <a class="brand" href="#home">T. Egbebo</a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Open navigation menu">
-          Menu
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars icon-menu" aria-hidden="true"></i>
+          <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
+          <span class="sr-only">Toggle menu</span>
         </button>
         <ul id="navLinks" class="nav-links">
           <li><a class="active" href="#home">Portfolio</a></li>
@@ -23,7 +29,11 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li>
+            <a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>GitHub
+            </a>
+          </li>
         </ul>
         <a class="btn ghost" href="#contact">Contact Me</a>
       </nav>
@@ -53,8 +63,8 @@
       <section id="services" class="section container">
         <h2>Services</h2>
         <p>
-          Fullstack web apps, backend APIs, database-backed features, and responsive front-end
-          interfaces.
+          Fullstack web apps, backend APIs, and responsive front-end interfaces, with a focus on
+          sports-law and legal-tech solutions.
         </p>
       </section>
 
@@ -71,11 +81,7 @@
         <div class="projects-grid">
           <article class="project-card">
             <h3>NaiDeliver Delivery</h3>
-            <p>Delivery platform with end-to-end flow for orders, tracking, and fulfillment.</p>
-          </article>
-          <article class="project-card">
-            <h3>Swiggy Clone</h3>
-            <p>Food delivery clone with backend functionality for data and ordering logic.</p>
+            <p>Delivery platform with end-to-end flow for orders, tracking, and fulfillment. Lots of inspiration from the swiggy app</p>
           </article>
           <article class="project-card">
             <h3>Wahala Tracker</h3>
@@ -94,19 +100,29 @@
 
       <section id="education" class="section container">
         <h2>Education</h2>
-        <p>Continuous learning through projects, tutorials, and frontend community resources.</p>
+        <p>
+          Recent law graduate from Nigeria specializing in sports law. Proficient in JavaScript
+          with a strong focus on building practical fullstack applications.
+        </p>
       </section>
 
       <section id="contact" class="section container contact">
         <h2>Contact</h2>
         <p>Open to freelance work, collaborations, and full-time opportunities.</p>
         <div class="contact-actions">
-          <a class="btn primary" href="mailto:emmanuelegbebo@gmail.com"
-            >emmanuelegbebo@gmail.com</a
-          >
-          <a class="btn ghost" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer"
-            >View GitHub</a
-          >
+          <a class="btn primary" href="mailto:emmanuelegbebo@gmail.com">
+            <i class="fa-solid fa-envelope"></i>Email Me
+          </a>
+          <a class="btn ghost" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i>View GitHub
+          </a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/tamarauemomoemi-e-60b143276/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin"></i>LinkedIn
+          </a>
+          <a class="btn ghost" href="https://wa.me/2347010399628" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>WhatsApp
+          </a>
+
         </div>
       </section>
     </main>
