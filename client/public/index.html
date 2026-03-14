@@ -1,41 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  
-</head>
-<body>
-  <header>
-    <nav>
-      <div id="nameDiv">
-        Tamarauemomoemi
-      </div>
-      <div id="linksDiv">
-        <ul>
-          <li>Portfolio</li>
-          <li>Services</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Education</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamarauemomeomi Emmanuel Egbebo | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio website for a frontend developer showcasing services, experience, and projects."
+    />
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#home">T. Egbebo</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open navigation menu">
+          Menu
+        </button>
+        <ul id="navLinks" class="nav-links">
+          <li><a class="active" href="#home">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">GitHub</a></li>
         </ul>
-      </div>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </nav>
+    </header>
 
-      <div id="contactDiv">
-        <button> Contact me</button>
-      </div>
-    </nav>
-  </header>
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Hi</p>
+          <h1>I'm <span>Tamarauemomeomi</span><br />Emmanuel Egbebo</h1>
+          <p class="summary">
+            Fullstack developer building complete products from UI to backend logic. I focus on
+            clean interfaces, reliable APIs, and features that solve real problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Hire Me</a>
+            <a href="#experience" class="btn accent">Experience</a>
+          </div>
+        </div>
+        <aside class="hero-media">
+          <div class="hero-photo">
+            <img alt="Portrait of Tamarauemomeomi Emmanuel Egbebo" src="/client/public/images/profileImg.png" />
+          </div>
+        </aside>
+      </section>
 
-  <main>
-    <article>
-      <div>Hi!</div>
-      <h1>I am Tamarauemomomi, a full stack developer</h1>
-    </article>
-    <div id="imageDiv">
+      <section id="services" class="section container">
+        <h2>Services</h2>
+        <p>
+          Fullstack web apps, backend APIs, database-backed features, and responsive front-end
+          interfaces.
+        </p>
+      </section>
 
-    </div>
-  </main>
-</body>
+      <section id="experience" class="section container">
+        <h2>Experience</h2>
+        <p>
+          Hands-on builds across delivery platforms, issue tracking tools, utilities, and this
+          portfolio site.
+        </p>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>NaiDeliver Delivery</h3>
+            <p>Delivery platform with end-to-end flow for orders, tracking, and fulfillment.</p>
+          </article>
+          <article class="project-card">
+            <h3>Swiggy Clone</h3>
+            <p>Food delivery clone with backend functionality for data and ordering logic.</p>
+          </article>
+          <article class="project-card">
+            <h3>Wahala Tracker</h3>
+            <p>Logs daily problems, then summarizes reasons and reactions.</p>
+          </article>
+          <article class="project-card">
+            <h3>Binary to Decimal Converter</h3>
+            <p>Utility tool that converts binary values into decimals accurately.</p>
+          </article>
+          <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This portfolio site showcasing my fullstack work and skills.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <h2>Education</h2>
+        <p>Continuous learning through projects, tutorials, and frontend community resources.</p>
+      </section>
+
+      <section id="contact" class="section container contact">
+        <h2>Contact</h2>
+        <p>Open to freelance work, collaborations, and full-time opportunities.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:emmanuelegbebo@gmail.com"
+            >emmanuelegbebo@gmail.com</a
+          >
+          <a class="btn ghost" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer"
+            >View GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright <span id="currentYear"></span> Tamarauemomeomi Emmanuel Egbebo</p>
+    </footer>
+
+    <script src="../src/index.js"></script>
+  </body>
 </html>
