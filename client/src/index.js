@@ -7,9 +7,23 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
+const setMenuState = (isOpen) => {
+  if (!menuToggle) {
+    return;
+  }
+
+  menuToggle.classList.toggle("open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+};
+
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    const isOpen = navLinks.classList.toggle("show");
+    setMenuState(isOpen);
   });
 }
 
@@ -18,8 +32,9 @@ navAnchors.forEach((link) => {
     navAnchors.forEach((item) => item.classList.remove("active"));
     link.classList.add("active");
 
-    if (navLinks.classList.contains("show")) {
+    if (navLinks && navLinks.classList.contains("show")) {
       navLinks.classList.remove("show");
+      setMenuState(false);
     }
   });
 });

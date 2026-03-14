@@ -8,20 +8,35 @@
       name="description"
       content="Portfolio website for a frontend developer showcasing services, experience, and projects."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../src/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fredoka:wght@300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav container">
         <a class="brand" href="#home">T. Egbebo</a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
           <i class="fa-solid fa-bars icon-menu" aria-hidden="true"></i>
           <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
-          <span class="sr-only">Toggle menu</span>
+          <span class="sr-only">Menu</span>
         </button>
         <ul id="navLinks" class="nav-links">
           <li><a class="active" href="#home">Portfolio</a></li>
@@ -30,9 +45,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li>
-            <a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i>GitHub
-            </a>
+            <a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
           </li>
         </ul>
         <a class="btn ghost" href="#contact">Contact Me</a>
@@ -55,7 +68,10 @@
         </div>
         <aside class="hero-media">
           <div class="hero-photo">
-            <img alt="Portrait of Tamarauemomeomi Emmanuel Egbebo" src="/client/public/images/profileImg.png" />
+            <img
+              alt="Portrait of Tamarauemomeomi Emmanuel Egbebo"
+              src="/client/public/images/profileImg.png"
+            />
           </div>
         </aside>
       </section>
@@ -63,8 +79,10 @@
       <section id="services" class="section container">
         <h2>Services</h2>
         <p>
-          Fullstack web apps, backend APIs, and responsive front-end interfaces, with a focus on
-          sports-law and legal-tech solutions.
+          Fullstack web apps, backend APIs, database-backed features, and responsive front-end
+          interfaces. Aspiring lawyer, soon to be called to the Nigerian Bar, with a focus on
+          sports law and tech law. I bring considerable experience in JavaScript and related
+          full stack technologies.
         </p>
       </section>
 
@@ -81,19 +99,27 @@
         <div class="projects-grid">
           <article class="project-card">
             <h3>NaiDeliver Delivery</h3>
-            <p>Delivery platform with end-to-end flow for orders, tracking, and fulfillment. Lots of inspiration from the swiggy app</p>
+            <p>
+              Delivery platform with end-to-end flow for orders, tracking, and fulfillment. Lots of
+              inspiration from the swiggy app
+            </p>
+            <a href="https://github.com/Proppeller25/InternBooth-swiggy-clone-project">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
           </article>
           <article class="project-card">
             <h3>Wahala Tracker</h3>
             <p>Logs daily problems, then summarizes reasons and reactions.</p>
+            <a href="https://github.com/Proppeller25/WahalaTracker">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
           </article>
           <article class="project-card">
             <h3>Binary to Decimal Converter</h3>
             <p>Utility tool that converts binary values into decimals accurately.</p>
+            <a href="https://github.com/Proppeller25/Binary-to-Decimal-Converter">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
           </article>
+
           <article class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>This portfolio site showcasing my fullstack work and skills.</p>
+            <h3>Decision Maker</h3>
+            <p>Random decision amker web app  which takes an input of two or more possible decisions and gives a decision to the user based on the fates.</p>
+            <a href="https://github.com/Proppeller25/DecisionMaker">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
           </article>
         </div>
       </section>
@@ -101,8 +127,9 @@
       <section id="education" class="section container">
         <h2>Education</h2>
         <p>
-          Recent law graduate from Nigeria specializing in sports law. Proficient in JavaScript
-          with a strong focus on building practical fullstack applications.
+          Continuous learning through projects, tutorials, and frontend community resources.
+          Soon-to-be called to the Nigerian Bar, aiming to specialize in sports law and tech law,
+          while growing my full stack JavaScript expertise.
         </p>
       </section>
 
@@ -111,18 +138,36 @@
         <p>Open to freelance work, collaborations, and full-time opportunities.</p>
         <div class="contact-actions">
           <a class="btn primary" href="mailto:emmanuelegbebo@gmail.com">
-            <i class="fa-solid fa-envelope"></i>Email Me
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            emmanuelegbebo@gmail.com
           </a>
-          <a class="btn ghost" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i>View GitHub
+          <a
+            class="btn ghost"
+            href="https://github.com/Proppeller25"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            View GitHub
           </a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/tamarauemomoemi-e-60b143276/" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-linkedin"></i>LinkedIn
+          <a
+            class="btn ghost"
+            href="https://www.linkedin.com/in/tamarauemomoemi-e-60b143276/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            LinkedIn
           </a>
-          <a class="btn ghost" href="https://wa.me/2347010399628" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-whatsapp"></i>WhatsApp
+          <a
+            class="btn ghost"
+            href="https://wa.me/+2347010399628"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp
           </a>
-
         </div>
       </section>
     </main>
