@@ -3,179 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tamarauemomeomi Emmanuel Egbebo | Frontend Developer</title>
-    <meta
-      name="description"
-      content="Portfolio website for a frontend developer showcasing services, experience, and projects."
-    />
+    <meta name="theme-color" content="#0b0d10" />
+    <title>Emmanuel Egbebo | Backend Developer</title>
+    <meta name="description" content="Emmanuel Egbebo is a backend-specialized software developer building secure APIs and full-stack products." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav container">
-        <a class="brand" href="#home">T. Egbebo</a>
-        <button
-          id="menuToggle"
-          class="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="navLinks"
-        >
-          <i class="fa-solid fa-bars icon-menu" aria-hidden="true"></i>
-          <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
-          <span class="sr-only">Menu</span>
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Emmanuel Egbebo home"><span class="brand-mark">E.</span><span>Emmanuel Egbebo</span></a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="fa-solid fa-bars icon-menu" aria-hidden="true"></i><i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i><span class="sr-only">Menu</span>
         </button>
         <ul id="navLinks" class="nav-links">
-          <li><a class="active" href="#home">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li>
-            <a href="https://github.com/Proppeller25" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-          </li>
+          <li><a class="active" href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li>
         </ul>
-        <a class="btn ghost" href="#contact">Contact Me</a>
+        <a class="nav-contact" href="#contact">Let’s talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
       </nav>
     </header>
 
     <main id="home">
       <section class="hero container">
         <div class="hero-copy">
-          <p class="eyebrow">Hi</p>
-          <h1>I'm <span>Tamarauemomeomi</span><br />Emmanuel Egbebo</h1>
-          <p class="summary">
-            Fullstack developer building complete products from UI to backend logic. I focus on
-            clean interfaces, reliable APIs, and features that solve real problems.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn primary">Hire Me</a>
-            <a href="#experience" class="btn accent">Experience</a>
-          </div>
+          <div class="profile-row"><div class="portrait-frame"><img src="./profileImg.png" alt="Emmanuel Egbebo" /></div><div class="profile-caption"><span class="status-dot"></span>Bomadi, Delta State</div></div>
+          <p class="eyebrow"><span class="status-dot"></span> Backend-focused software developer <span class="eyebrow-location">· Nigeria</span></p>
+          <h1>Building dependable<br /><span class="headline-accent">systems</span> for the web.</h1>
+          <p class="summary">I’m Emmanuel, a backend-specialized developer working across APIs, databases, and thoughtful full-stack products. I bring a legal mind for structure and detail to every system I build.</p>
+          <div class="hero-actions"><a href="#work" class="btn primary">Explore my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a><a href="#contact" class="btn secondary">Get in touch</a></div>
+          <div class="hero-meta"><span>Currently focused on</span><strong>Node.js · APIs · Data systems</strong></div>
         </div>
-        <aside class="hero-media">
-          <div class="hero-photo">
-            <img
-              alt="Portrait of Tamarauemomeomi Emmanuel Egbebo"
-              src="./profileImg.png"
-            />
-          </div>
-        </aside>
       </section>
 
-      <section id="services" class="section container">
-        <h2>Services</h2>
-        <p>
-          Fullstack web apps, backend APIs, database-backed features, and responsive front-end
-          interfaces. Aspiring lawyer, soon to be called to the Nigerian Bar, with a focus on
-          sports law and tech law. I bring considerable experience in JavaScript and related
-          full stack technologies.
-        </p>
+      <section id="about" class="section container">
+        <div class="section-heading"><p class="section-index">01 / ABOUT</p><h2>Technology meets<br /><span>structured thinking.</span></h2></div>
+        <div class="about-content"><p class="lead">I build secure, maintainable software with a special interest in the backend systems that make products work.</p><p>My experience spans REST API design, authentication, relational and non-relational databases, and responsive frontends. My legal education shaped how I approach complex problems: carefully, logically, and with attention to the details that matter.</p>
+          <div class="skills"><h3>Tools I work with</h3><ul class="skill-list">
+            <li><i class="fa-brands fa-js" aria-hidden="true"></i><span>JavaScript</span></li>
+            <li><i class="fa-brands fa-node-js" aria-hidden="true"></i><span>Node.js</span></li>
+            <li><i class="fa-solid fa-server" aria-hidden="true"></i><span>Express.js</span></li>
+            <li><i class="fa-solid fa-database" aria-hidden="true"></i><span>PostgreSQL</span></li>
+            <li><i class="fa-solid fa-leaf" aria-hidden="true"></i><span>MongoDB</span></li>
+            <li><i class="fa-brands fa-react" aria-hidden="true"></i><span>React</span></li>
+            <li><i class="fa-solid fa-bolt" aria-hidden="true"></i><span>Vite</span></li>
+            <li><i class="fa-solid fa-wind" aria-hidden="true"></i><span>Tailwind CSS</span></li>
+            <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i><span>Git &amp; GitHub</span></li>
+            <li><i class="fa-solid fa-cloud" aria-hidden="true"></i><span>Render · Vercel</span></li>
+          </ul></div>
+        </div>
+      </section>
+
+      <section id="work" class="section container">
+        <div class="section-heading"><p class="section-index">02 / SELECTED WORK</p><h2>Built to solve<br /><span>real problems.</span></h2></div>
+        <div class="projects-grid">
+          <article class="project-card featured"><div class="project-top"><span class="project-number">01</span><span class="project-type">FULL-STACK · EXPENSES</span></div><h3>Monie-Track</h3><p>A personal expense tracker with a secure REST API and a responsive interface for managing everyday transactions.</p><div class="tag-list"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>React</span><span>Tailwind</span></div><div class="project-links"><a href="https://monie-track.vercel.app/" target="_blank" rel="noreferrer">Live app <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a href="https://monie-track-api.vercel.app/" target="_blank" rel="noreferrer">API <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">02</span><span class="project-type">BACKEND · EVENTS</span></div><h3>Eventtura</h3><p>Event management and booking infrastructure for registrations, secure event handling, and structured data storage.</p><div class="tag-list"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Render</span></div><div class="project-links"><a href="https://eventtura.onrender.com/" target="_blank" rel="noreferrer">Visit project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">03</span><span class="project-type">WEB APP · DELIVERY</span></div><h3>NaiDeliver</h3><p>A delivery platform concept with an end-to-end flow for orders, tracking, and fulfilment.</p><div class="tag-list"><span>JavaScript</span><span>Web application</span></div><div class="project-links"><a href="https://github.com/Proppeller25/InternBooth-swiggy-clone-project" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">04</span><span class="project-type">UTILITY · JAVASCRIPT</span></div><h3>Wahala Tracker</h3><p>A small tool to log day-to-day problems and reflect on their causes and reactions.</p><div class="tag-list"><span>JavaScript</span><span>Web application</span></div><div class="project-links"><a href="https://github.com/Proppeller25/WahalaTracker" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">05</span><span class="project-type">UTILITY · CONVERSION</span></div><h3>Binary to Decimal</h3><p>A focused conversion tool for turning binary values into decimal numbers.</p><div class="tag-list"><span>JavaScript</span><span>Utility</span></div><div class="project-links"><a href="https://github.com/Proppeller25/Binary-to-Decimal-Converter" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+          <article class="project-card"><div class="project-top"><span class="project-number">06</span><span class="project-type">WEB APP · DECISIONS</span></div><h3>Decision Maker</h3><p>A lightweight decision helper that picks between two or more options at random.</p><div class="tag-list"><span>JavaScript</span><span>Web application</span></div><div class="project-links"><a href="https://github.com/Proppeller25/DecisionMaker" target="_blank" rel="noreferrer">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div></article>
+        </div>
+        <a class="all-projects" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">More experiments on GitHub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
       </section>
 
       <section id="experience" class="section container">
-        <h2>Experience</h2>
-        <p>
-          Hands-on builds across delivery platforms, issue tracking tools, utilities, and this
-          portfolio site.
-        </p>
-      </section>
-
-      <section id="projects" class="section container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>NaiDeliver Delivery</h3>
-            <p>
-              Delivery platform with end-to-end flow for orders, tracking, and fulfillment. Lots of
-              inspiration from the swiggy app
-            </p>
-            <a href="https://github.com/Proppeller25/InternBooth-swiggy-clone-project">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
-          </article>
-          <article class="project-card">
-            <h3>Wahala Tracker</h3>
-            <p>Logs daily problems, then summarizes reasons and reactions.</p>
-            <a href="https://github.com/Proppeller25/WahalaTracker">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
-          </article>
-          <article class="project-card">
-            <h3>Binary to Decimal Converter</h3>
-            <p>Utility tool that converts binary values into decimals accurately.</p>
-            <a href="https://github.com/Proppeller25/Binary-to-Decimal-Converter">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
-          </article>
-
-          <article class="project-card">
-            <h3>Decision Maker</h3>
-            <p>Random decision amker web app  which takes an input of two or more possible decisions and gives a decision to the user based on the fates.</p>
-            <a href="https://github.com/Proppeller25/DecisionMaker">Go to project <i class="fa-solid fa-circle-arrow-right"></i></a>
-          </article>
+        <div class="section-heading"><p class="section-index">03 / EXPERIENCE</p><h2>Learning by<br /><span>building systems.</span></h2></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">SOFTWARE · REMOTE</div><div class="timeline-body"><h3>Backend Developer Intern <span>— TS Academy</span></h3><p>Built backend architecture and data layers with Node.js, Express, PostgreSQL, and SQLite. Designed REST endpoints, authentication, validation middleware, and optimized database queries.</p><div class="tag-list"><span>Node.js</span><span>PostgreSQL</span><span>SQLite</span><span>REST APIs</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">SOFTWARE · REMOTE</div><div class="timeline-body"><h3>Full-Stack Developer Intern <span>— Internbooth</span></h3><p>Completed an intensive software engineering programme and built full-stack applications, connecting React and Vite interfaces to backend services and MongoDB or PostgreSQL data.</p><div class="tag-list"><span>React</span><span>Vite</span><span>MongoDB</span><span>GitHub</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">LEGAL · JUL 2026</div><div class="timeline-body"><h3>Virtual Intern <span>— Platinum and Tailor Hill LP</span></h3><p>Researched the intersection of artificial intelligence and modern legal frameworks with cross-functional teams.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">LEGAL · 2022—2025</div><div class="timeline-body"><h3>Legal Intern &amp; Law School Extern <span>— Fawei &amp; Partners at Law; Ever Odo &amp; Co</span></h3><p>Prepared litigation summaries, briefs, and compliance records; researched statutory provisions and supported litigation teams.</p></div></article>
         </div>
       </section>
 
       <section id="education" class="section container">
-        <h2>Education</h2>
-        <p>
-          Continuous learning through projects, tutorials, and frontend community resources.
-          Soon-to-be called to the Nigerian Bar, aiming to specialize in sports law and tech law,
-          while growing my full stack JavaScript expertise.
-        </p>
+        <div class="section-heading"><p class="section-index">04 / EDUCATION</p><h2>Grounded in law.<br /><span>Driven by technology.</span></h2></div>
+        <div class="education-list"><article class="education-card"><span class="education-year">2026</span><div><h3>Bachelor of Law (B.L.) · First Class Honours</h3><p>Nigerian Law School, Bwari / Yola Campus</p></div></article><article class="education-card"><span class="education-year">2019—24</span><div><h3>Bachelor of Laws (LL.B.) · Second Class Upper</h3><p>Niger Delta University</p><p class="thesis">Thesis: Athlete contracts in Nigerian sports and effective dispute resolution.</p></div></article><article class="education-card"><span class="education-year">CERT.</span><div><h3>Certified Full-Stack Developer</h3><p>Internbooth Certification Program</p></div></article></div>
       </section>
 
-      <section id="contact" class="section container contact">
-        <h2>Contact</h2>
-        <p>Open to freelance work, collaborations, and full-time opportunities.</p>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:emmanuelegbebo@gmail.com">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            emmanuelegbebo@gmail.com
-          </a>
-          <a
-            class="btn ghost"
-            href="https://github.com/Proppeller25"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-            View GitHub
-          </a>
-          <a
-            class="btn ghost"
-            href="https://www.linkedin.com/in/tamarauemomoemi-e-60b143276/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            LinkedIn
-          </a>
-          <a
-            class="btn ghost"
-            href="https://wa.me/+2347010399628"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-            WhatsApp
-          </a>
-        </div>
-      </section>
+      <section id="contact" class="contact-band"><div class="container contact-inner"><div><p class="section-index">05 / CONTACT</p><h2>Have a good problem<br />to solve?</h2><p class="contact-copy">Open to software opportunities, collaborations, and thoughtful freelance work.</p></div><div class="contact-actions"><a class="btn primary" href="mailto:emmanuelegbebo@gmail.com">Start a conversation <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="contact-link" href="https://www.linkedin.com/in/tamarauemomoemi-e-60b143276/" target="_blank" rel="noreferrer">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="contact-link" href="https://github.com/Proppeller25" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="contact-link" href="https://wa.me/2347010399628" target="_blank" rel="noreferrer">WhatsApp <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><span class="email-text">emmanuelegbebo@gmail.com</span></div></div></section>
     </main>
-
-    <footer class="site-footer">
-      <p>Copyright <span id="currentYear"></span> Tamarauemomeomi Emmanuel Egbebo</p>
-    </footer>
-
+    <footer class="site-footer container"><a class="brand" href="#home"><span class="brand-mark">E.</span><span>Emmanuel Egbebo</span></a><p>Built with intention · <span id="currentYear"></span></p><a href="#home" class="back-top">Back to top ↑</a></footer>
     <script src="./index.js"></script>
   </body>
 </html>
